@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ...................................................................navbar.......................................................  */
+.container-main {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.button{
+  cursor: pointer;
+}
+.hamb-menu{
+  display: none;
+}
+/* Media queries start from here  */
+@media screen and (max-width:998px){
+  .menu-web{
+    display: none;
+  }
+  
+    .hamb-menu{
+      display: inline-block;
+    }
+    
+    .menu-mobile ul{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .menu-mobile{
+      position: absolute;
+      width: 100%;
+      top:47px;
+      left: 0;
+      background-color: rgb(48, 48, 46);
+      padding: 10px 0;
+    }
+  }
+/* ...........................................navbar endes here...........................................  */
+
+/* ........................................body.............................................  */
+.card {
+  width: 100%;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  margin: auto;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.textLeft {
+  color: gray;
+  font-size: 14px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats span {
+  display: block;
+}
+
+@media (max-width: 400px) {
+  .card {
+      padding: 15px;
+  }
+  .card-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  .stats {
+      flex-direction: column;
+      align-items: center;
+  }
+  .stats div {
+      margin-bottom: 10px;
+  }
+}
+
+/* body ends here  */
+
+/* .................................................footer................................................ */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-links, .footer-socials {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li, .footer-socials a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+.footer-links li a{
+  color: #fff;
+  text-decoration: none;
+}
+.footer-links li a:hover{
+text-decoration: underline;
+}
+.footer-links li a:hover, .footer-socials a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* footer code end here  */
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
