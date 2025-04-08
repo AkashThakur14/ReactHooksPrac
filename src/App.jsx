@@ -4,6 +4,7 @@ import { HeroSection } from "./components/HeroSection";
 import "./App.css"
 import { RuleHooks } from "./components/RuleHooks";
 import { UseStateArray } from "./components/UseStateArray";
+import { UseStateObject } from "./components/UseStateObject";
 
 
 const App = () => {
@@ -12,7 +13,8 @@ const App = () => {
       <Navbar />
       {/* <HeroSection /> */}
       {/* <RuleHooks /> */}
-      <UseStateArray />
+      {/* <UseStateArray /> */}
+      <UseStateObject />
       <Footer />
     </div>
   )
