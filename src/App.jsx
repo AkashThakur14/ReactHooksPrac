@@ -13,8 +13,8 @@ const App = () => {
       <Navbar />
       {/* <HeroSection /> */}
       {/* <RuleHooks /> */}
-      {/* <UseStateArray /> */}
-      <UseStateObject />
+      <UseStateArray />
+      {/* <UseStateObject /> */}
       <Footer />
     </div>
   )

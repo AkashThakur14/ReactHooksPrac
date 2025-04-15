@@ -10,7 +10,7 @@ setMyObject({...myObject, myName:"Akash Thakur"});
 }
     return (
         <>
-            <section className="hero-container text-center bg-secondary bg-gradient">
+            <section className="hero-container text-center">
                 <h2 className='btn btn-success'>Name:{myObject.myName} & Age: {myObject.myAge} & Degree: {myObject.degree}</h2>
                 <button className='btn btn-danger' onClick={changeObjData}>Update</button>
             </section>
@@ -18,4 +18,3 @@ setMyObject({...myObject, myName:"Akash Thakur"});
         </>
     )
 }
-
