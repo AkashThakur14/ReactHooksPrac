@@ -5,6 +5,7 @@ import "./App.css"
 import { RuleHooks } from "./components/RuleHooks";
 import { UseStateArray } from "./components/UseStateArray";
 import { UseStateObject } from "./components/UseStateObject";
+import { ShortCirEval } from "./components/ShortCirEval";
 
 
 const App = () => {
@@ -13,8 +14,9 @@ const App = () => {
       <Navbar />
       {/* <HeroSection /> */}
       {/* <RuleHooks /> */}
-      <UseStateArray />
+      {/* <UseStateArray /> */}
       {/* <UseStateObject /> */}
+      <ShortCirEval />
       <Footer />
     </div>
   )
