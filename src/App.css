@@ -159,6 +159,11 @@ h4 {
   text-align: center;
   padding: 20px 0;
   margin-bottom: 0;
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
 }
 
 .footer-container {
@@ -197,9 +202,82 @@ text-decoration: underline;
 /* footer code end here  */
 
 .hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
+margin: 60px 0;
 }
+
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+form input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+form input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+form button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.showData {
+  margin-top: 20px;
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.showData p {
+  margin: 5px 0;
+  font-weight: 500;
+  word-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  form {
+    padding: 15px;
+  }
+
+  form input,
+  form button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .showData {
+    padding: 10px;
+  }
+
+  .showData p {
+    font-size: 14px;
+  }
+}
+

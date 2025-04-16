@@ -6,17 +6,23 @@ import { RuleHooks } from "./components/RuleHooks";
 import { UseStateArray } from "./components/UseStateArray";
 import { UseStateObject } from "./components/UseStateObject";
 import { ShortCirEval } from "./components/ShortCirEval";
+import { BasicForm } from "./components/forms/basicForm";
 
 
 const App = () => {
   return (
     <div>
       <Navbar />
+
+
       {/* <HeroSection /> */}
       {/* <RuleHooks /> */}
       {/* <UseStateArray /> */}
       {/* <UseStateObject /> */}
-      <ShortCirEval />
+      {/* <ShortCirEval /> */}
+      <BasicForm />
+
+
       <Footer />
     </div>
   )
