@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 export const UseStateArray = () => {
 
- const bioData = [
+  const bioData = [
     {
       id: 0, myName: "Akash Singh", age: 24,
     },
@@ -17,19 +17,29 @@ export const UseStateArray = () => {
 
   console.log(bioData);
 
-const [myArray,setMyArray] = useState(bioData)
-  const clearArray = () =>{
+  const [myArray, setMyArray] = useState(bioData)
+
+  const clearArray = () => {
     setMyArray([]);
   }
 
-
+  const removeEle = (id) => {
+   const myNewArray = myArray.filter((currentElement) => {
+    return(
+      currentElement.id != id
+    )
+   })
+   setMyArray(myNewArray)
+  }
   return (
     <>
-      <section className="hero-container text-center bg-secondary bg-gradient">
+      <section className="hero-container text-center">
         {
           myArray.map((curEle) => {
             return (
-              <h2 className='btn btn-success' key={curEle.id}>Name: {curEle.myName} and Age: {curEle.age} </h2>
+              <h2 className='btn btn-success' key={curEle.id}>Name: {curEle.myName} and Age: {curEle.age}
+                <button className='btn btn-danger' onClick={() => removeEle(curEle.id)}>Remove</button>
+              </h2>
             )
           })
         }
