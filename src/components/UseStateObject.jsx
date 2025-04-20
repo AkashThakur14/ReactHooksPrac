@@ -18,4 +18,3 @@ setMyObject({...myObject, myName:"Akash Thakur"});
         </>
     )
 }
-
